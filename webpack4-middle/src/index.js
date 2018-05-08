@@ -1,0 +1,10 @@
+import './reset.css';
+import './index.css';
+console.log('-----------------------index.hml-----------------------');
+document.getElementById('root').style.color='green';
+const imgSrc = require('./images/banner.png');
+// console.log(imgSrc);
+const root = document.getElementById('root');
+const img = document.createElement('img');
+img.src = imgSrc;
+root.insertBefore(img,root.childNodes[0]);
